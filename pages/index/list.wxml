@@ -1,0 +1,10 @@
+<view class="page">
+<view class="page__bd">
+<view wx:for="{{artList}}" wx:for-item="itemName" wx:key="3">
+    <navigator url="/pages/index/detail?id={{itemName.id}}" class="weui-footer__link">
+      <view>{{itemName.title}}</view>
+    </navigator>
+  </view>
+</view>
+  <view class="weui-footer">我是页脚</view>
+</view>

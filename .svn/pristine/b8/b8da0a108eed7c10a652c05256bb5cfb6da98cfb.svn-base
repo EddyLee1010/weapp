@@ -1,0 +1,8 @@
+/* search.wxss */
+
+.hot_kw{
+    border: 1px solid #eee;
+    padding: 3px;
+    border-radius: 3px;
+    width: auto
+}

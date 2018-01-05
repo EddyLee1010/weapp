@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<!--搜索框-->
+<view class="page">
+    <view>
+        <navigator url="/pages/index/search">
+            <input placeholder="搜你想搜" class="weui-search-bar__input" placeholder='景点/主题' />
+        </navigator>
+    </view>
+    <!--banner滚动-->
+    <swiper indicator-dots="true" autoplay="true" interval="2000" duration="500">
+        <block wx:for="{{imgUrls}}" wx:key="unique">
+            <swiper-item>
+                <navigator url="/pages/index/tempMess">
+                    <image src="{{item}}" class="slide-image" width="355" height="150" />
+                </navigator>
+            </swiper-item>
+        </block>
+    </swiper>
+    <!--分类图标区-->
+    <view>
+        <view wx:for="{{columnList}}" wx:for-index="idx" wx:for-item="itemName" wx:key="s">
+            <navigator url="/pages/index/list?id={{itemName.id}}">
+                <view class="menucate">{{itemName.name}}</view>
+            </navigator>
+        </view>
+    </view>
+    <view bindlongtap="dload">下载</view>
+</view>

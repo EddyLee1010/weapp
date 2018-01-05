@@ -1,0 +1,13 @@
+<!--search.wxml-->
+
+<view>
+    <input placeholder="搜你想搜" class="weui-search-bar__input" placeholder='景点/主题' />
+</view>
+<view>
+    <view class='s_hot_title'>热门搜索</view>
+    <view>
+        <view class='hot_kw'>森林动物园</view>
+        <view>森林动物园</view>
+        <view>森林动物园</view>
+    </view>
+</view>

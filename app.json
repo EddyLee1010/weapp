@@ -1,0 +1,29 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/index/list",
+        "pages/index/detail",
+        "pages/person/index",
+        "pages/index/search",
+        "pages/index/tempMess"
+    ],
+    "window": {
+        "navigationBarTitleText": "惠淘票"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "门票",
+                "iconPath": "images/ticket.png",
+                "selectedIconPath": "images/ticket_ck.png"
+            },
+            {
+                "pagePath": "pages/person/index",
+                "text": "我的",
+                "iconPath": "images/person.png",
+                "selectedIconPath": "images/person_ck.png"
+            }
+        ]
+    }
+}
